@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rosel, Happy Valentines!</title>
+    <style>
+        body{
+            background-color : white;
+            background-image: url(bg.png);
+            background-repeat: no-repeat;
+            background-size: 720px 1600px;
+            background-position-x: center;
+        }
+        .gif{
+            text-align: center;
+            margin: 50% auto;
+            
+        }
+        .buttons{
+       
+            text-align: center;
+            padding: 10%;
+        }
+    </style>
+</head>
+<body>
+    <div class="gif">
+        <div>
+            <pre style="font-size: 18px;font-style: italic;">
+Rosel Saurnido Racoma, it is I to ask you 
+this important question
+once a year, we had our share of troubles
+and pains and happiness and
+I want to be with you forever,
+this is the first time I will ask you baby,
+I love you and
+            </pre>
+        </div>
+        <img src="valgif.gif" alt="">
+        <div class="buttons">
+            <button class="btn btn-success" id="YES" data-bs-toggle="modal" data-bs-target="#staticBackdrop">YES BABY I LOVE YOU 😘😘</button>
+            <button class="btn btn-danger" id="NO">NO</button>
+        </div>
+    </div>
+  
+  <!-- Modal -->
+  <div class="modal fade" style="margin-top: 50%;" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog " style="background-color: pink;">
+      <div class="modal-content" style="background-color: white;">
+        <div class="modal-header text-center">
+          <h1 class="modal-title text-center">ROSEL I LOVE YOUUU BEHHH KOOOOOOOO </h1>
+        </div>
+        <div class="modal-body">
+            <img src="iloveyou.gif" alt="" width="100%">
+            <h2 class="text-center">MWA MWAH MWAH MWAH MWAH 😘😘😘😘😘 yours and forever</h2>
+        </div>
+        <div class="text-center p-2">
+          <a type="button" class="btn text-center" style="background-color: pink;"  id="iloveyou" href="https://fb.watch/qaI4htuLx7/">YES, I LOVE YOU TOO BEHHHHH 😘</a>
+        </div>
+      </div>
+    </div>
+  </div>
+   
+</body>
+<script>
+    var noClickTimes = 0;
+    $('#NO').click(()=>{
+        noClickTimes++;
+        if(noClickTimes == 1){
+            $('#YES').text('YESSSS I LOVE YOUU TOOOOO');
+             $('#YES').css("font-size","20px");
+             $('#NO').text('EHHH YAW KO NGAAA BEHHH')
+        }else if(noClickTimes == 2){
+            $('#YES').text('YESSSS I LOVE YOUU TOOOOO');
+             $('#YES').css("font-size","30px");
+             $('#NO').text('AYAW KOOOO BLEHHH')
+        }else if(noClickTimes > 2){
+            $('#YES').text('BEHHHH BEHHHH 🥺🥺🥺 I love you , yes kana');
+             $('#YES').css("font-size","100px");
+             $('#NO').hide()
+        }
+     
+        
+    })
+
+    $("#iloveyou").click(()=>{
+
+    })
+ 
+</script>
+</html>
