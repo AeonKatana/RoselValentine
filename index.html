@@ -12,8 +12,8 @@
             background-color : white;
             background-image: url(bg.png);
             background-repeat: no-repeat;
-            background-size: 720px 1600px;
-            background-position-x: center;
+            background-size: 100% 90%;
+           
         }
         .gif{
             text-align: center;
@@ -29,8 +29,8 @@
 </head>
 <body>
     <div class="gif">
-        <div>
-            <pre style="font-size: 18px;font-style: italic;">
+        <div class="mb-3">
+            <pre style="font-size: 12px;font-style: italic;">
 Rosel Saurnido Racoma, it is I to ask you 
 this important question
 once a year, we had our share of troubles
@@ -40,7 +40,7 @@ this is the first time I will ask you baby,
 I love you and
             </pre>
         </div>
-        <img src="valgif.gif" alt="">
+        <img src="valgif.gif" alt="" width="75%">
         <div class="buttons">
             <button class="btn btn-success" id="YES" data-bs-toggle="modal" data-bs-target="#staticBackdrop">YES BABY I LOVE YOU 😘😘</button>
             <button class="btn btn-danger" id="NO">NO</button>
@@ -48,7 +48,7 @@ I love you and
     </div>
   
   <!-- Modal -->
-  <div class="modal fade" style="margin-top: 50%;" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal fade" style="margin-top: 20%;" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog " style="background-color: pink;">
       <div class="modal-content" style="background-color: white;">
         <div class="modal-header text-center">
@@ -76,11 +76,11 @@ I love you and
              $('#NO').text('EHHH YAW KO NGAAA BEHHH')
         }else if(noClickTimes == 2){
             $('#YES').text('YESSSS I LOVE YOUU TOOOOO');
-             $('#YES').css("font-size","30px");
+             $('#YES').css("font-size","25px");
              $('#NO').text('AYAW KOOOO BLEHHH')
         }else if(noClickTimes > 2){
             $('#YES').text('BEHHHH BEHHHH 🥺🥺🥺 I love you , yes kana');
-             $('#YES').css("font-size","100px");
+             $('#YES').css("font-size","30px");
              $('#NO').hide()
         }
      
